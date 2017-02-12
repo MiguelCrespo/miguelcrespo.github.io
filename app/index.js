@@ -6,6 +6,9 @@ import { Router, Route, hashHistory, IndexRoute } from 'react-router';
 import App from './components/App';
 import Home from './components/Home';
 
+// Styles
+import './index.scss';
+
 ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={App}>
