@@ -1,0 +1,53 @@
+.home-cover {
+    background-image: url('./resources/images/cover.jpg');
+    background-size: cover;
+    height: 19.8rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.home-cover__content {
+    font-weight: bold;
+    color: $colorWhite;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.50);
+}
+
+// Title
+.home-cover__content__header {
+    padding-bottom: 2rem;
+}
+
+.home-cover__content__header-subtitle {
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.home-cover__content__header__content {
+    padding-bottom: 2rem;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .home-cover {
+        margin-top: -5rem;
+        height: 35rem;
+        background-position-y: -3rem;
+    }
+    .home-cover__content__header {
+        font-size: 2.5rem;
+        padding-bottom: 1rem;
+    }
+    .home-cover__content__header-subtitle {
+        padding-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+    .home-cover__content__header__content {
+        padding-bottom: 3rem;
+    }
+    .button-contact {
+        padding: 0.8rem 3rem;
+    }
+}

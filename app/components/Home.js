@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
 
+import Section from './Section';
+import HomeCover from './HomeCover';
+
 export default class Home extends Component {
     render() {
-        return <h1>Home</h1>
+        return <div>
+            <Section sectionClass="home-cover">
+                <HomeCover/>
+            </Section>
+        </div>
     }
 }
