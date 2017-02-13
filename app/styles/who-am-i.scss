@@ -1,0 +1,59 @@
+.who-am-i {
+    background-color: $colorWhoAmIBackground;
+    padding-left: .8rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.who-am-i,
+.who-am-i-content {
+    position: relative;
+}
+
+.who-am-i-content {
+    z-index: 1;
+}
+
+.who-am-i::before,
+.who-am-i::after {
+    content: ' ';
+    height: 70%;
+    background-color: #F9F9F9;
+    left: 0;
+    display: block;
+    width: 100%;
+    position: absolute;
+}
+
+.who-am-i::before {
+    top: -1rem;
+    transform: skewY(-3deg);
+}
+
+.who-am-i::after {
+    bottom: -1rem;
+    transform: skewY(3deg);
+}
+
+.image-me {
+    width: 10rem;
+    float: left;
+    margin-right: 1.5rem;
+}
+
+.about-me {
+    color: $colorPrimary;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .who-am-i::before {
+        top: -3rem;
+    }
+    .who-am-i::after {
+        bottom: -3rem;
+    }
+}

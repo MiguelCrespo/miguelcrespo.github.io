@@ -1,0 +1,15 @@
+.section-title {
+    font-weight: bold;
+    color: $colorPrimary;
+    padding-left: .8rem;
+    padding-bottom: 1.5rem;
+    position: relative;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .section-title {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+}

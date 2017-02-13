@@ -65,3 +65,9 @@ html {
 a {
 	text-decoration: none;
 }
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -1,9 +1,12 @@
 @import './styles/reset';
 
 @import './styles/variables';
+@import './styles/extras';
 @import './styles/buttons';
 @import './styles/header';
+@import './styles/section';
 @import './styles/home-cover';
+@import './styles/who-am-i';
 
 body {
   font-size: 1.4rem;
