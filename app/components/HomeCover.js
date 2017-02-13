@@ -3,9 +3,9 @@ import React, {Component} from 'react';
 export default class HomeCover extends Component {
     render() {
         return <div className="home-cover__content">
-            <h1 className="home-cover__content__header">Hi. I'm Miguel!</h1>
+            <h1 className="home-cover__content__header">Hi. I'm Miguel</h1>
 
-            <h2 className="home-cover__content__header-subtitle">Web developer advocate.</h2>
+            <h2 className="home-cover__content__header-subtitle">A web developer</h2>
 
             <p className="home-cover__content__header__content">
                 In love with tecnology and a problems solver

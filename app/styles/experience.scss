@@ -1,0 +1,74 @@
+.experience-content {
+    position: relative;
+}
+
+.experience-item {
+    display: flex;
+    min-height: 15rem;
+}
+
+.experience-item__company {
+    flex-grow: 1;
+    max-width: 10rem;
+}
+
+.experience-item__details {
+    flex-grow: 5;
+    position: relative;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+.image-company {
+    width: 10rem;
+}
+
+.experience-item__company__name {
+    text-align: center;
+    color: $colorPrimary;
+    font-weight: bold;
+    margin-top: .5rem;
+}
+
+.experience-timeline {
+    position: absolute;
+    height: 100%;
+    width: .4rem;
+    background-color: $colorPrimary;
+    top: 0;
+    left: -1rem;
+    transform: scaleY(0);
+    transition: transform 5s;
+    transform-origin: top;
+    transform: scaleY(1);
+    display: none;
+}
+
+.experience-item__details__duration {
+    position: absolute;
+    top: 2.5rem;
+    left: -3.5rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: $colorPrimary;
+    color: $colorWhite;
+    padding: 1rem;
+    text-align: center;
+}
+
+.experience-item__details__dates {
+    color: #312b2b;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: .5rem;
+    padding-top: .2rem;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .experience-timeline {
+        display: block;
+    }
+}
