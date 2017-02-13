@@ -16,9 +16,8 @@
     flex-grow: 5;
     position: relative;
     padding-left: 2rem;
-    padding-bottom: 2rem;
-    padding-bottom: 2rem;
-}
+    padding-bottom: 3rem;
+    }
 
 .image-company {
     width: 10rem;
@@ -71,4 +70,17 @@
     .experience-timeline {
         display: block;
     }
+}
+
+.experience-item__company__seconds{
+    margin-top: .5rem;
+}
+
+.experience-item__company__seconds, .experience-item__company__seconds-text{
+    text-align: center;
+    color: #909090;
+}
+
+.experience-item__company__seconds-text{
+    font-size: 1.3rem;
 }

@@ -26,8 +26,8 @@ const experiences = [
             name: 'Erasmeet',
             image_url: './app/resources/images/me.jpg'
         },
-        startDate: new Date('01/03/2015'),
-        endDate: new Date('01/01/2016')
+        startDate: new Date('03/02/2015'),
+        endDate: new Date('01/31/2016')
     },
 ];
 
