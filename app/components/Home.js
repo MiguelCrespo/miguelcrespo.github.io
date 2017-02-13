@@ -42,7 +42,7 @@ export default class Home extends Component {
                 <WhoAmI/>
             </Section>
 
-            <Section sectionClass="section-padding experience" title="Experience">
+            <Section sectionClass="section-padding section-edges experience" title="Experience">
                 <Experience experiences = {experiences}/>
             </Section>
         </div>
