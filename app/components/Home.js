@@ -6,14 +6,15 @@ import WhoAmI from './WhoAmI';
 import Experience from './Experience';
 import Projects from './Projects';
 import AboutPage from './AboutPage';
+import Footer from './Footer';
 
 const experiences = [
     {
         id: 1,
         title: 'Frontend Developer',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae totam nesciunt f' +
-                'uga laboriosam, voluptatem ad eius eveniet blanditiis laborum ipsam quam, quod m' +
-                'agni aspernatur id sit, reprehenderit ex eligendi veniam.',
+        'uga laboriosam, voluptatem ad eius eveniet blanditiis laborum ipsam quam, quod m' +
+        'agni aspernatur id sit, reprehenderit ex eligendi veniam.',
         company: {
             id: 1,
             name: 'ClickDelivery',
@@ -24,8 +25,8 @@ const experiences = [
         id: 2,
         title: 'Software Developer',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae totam nesciunt f' +
-                'uga laboriosam, voluptatem ad eius eveniet blanditiis laborum ipsam quam, quod m' +
-                'agni aspernatur id sit, reprehenderit ex eligendi veniam.',
+        'uga laboriosam, voluptatem ad eius eveniet blanditiis laborum ipsam quam, quod m' +
+        'agni aspernatur id sit, reprehenderit ex eligendi veniam.',
         company: {
             id: 2,
             name: 'Erasmeet',
@@ -95,17 +96,19 @@ export default class Home extends Component {
                 <Experience experiences={experiences}/>
             </Section>
 
-          <Section
-            sectionClass="section-padding section-angled projects"
-            title="Projects">
-            <Projects projects={projects}/>
-          </Section>
+            <Section
+                sectionClass="section-padding section-angled projects"
+                title="Projects">
+                <Projects projects={projects}/>
+            </Section>
 
             <Section
                 sectionClass="section-padding section-edges experience"
                 title="About this page">
                 <AboutPage/>
             </Section>
+
+            <Footer/>
         </div>
     }
 }

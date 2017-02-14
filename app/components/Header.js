@@ -19,7 +19,6 @@ export default class Header extends Component {
                             <i className="menu-nav__item"><a href="#experience">Experience</a></i>
                             <i className="menu-nav__item"><a href="#works">Works</a></i>
                             <i className="menu-nav__item"><a href="#about-this">About this page</a></i>
-                            <i className="menu-nav__item"><a href="#contact">Contact</a></i>
                         </ul>
                     </nav>
                 </div>
