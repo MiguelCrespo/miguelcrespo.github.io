@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 export default class WhoAmI extends Component {
     render() {
-        return <div className="section-content who-am-i-content">
+        return <div className="section-content section-angled-content who-am-i-content">
             <img className="image-round image-me" src="./app/resources/images/me.jpg" alt=""/>
 
             <p className="about-me group">
