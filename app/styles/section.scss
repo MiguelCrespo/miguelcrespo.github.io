@@ -47,6 +47,25 @@
     transform: skewY(3deg);
 }
 
+.button-more {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.paragraph-with-image {
+    >img {
+        width: 10rem;
+        float: left;
+        margin-right: 1.5rem;
+    }
+    >p {
+        color: #1C3A5D;
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+}
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
     .section-title {
@@ -60,5 +79,14 @@
     .section-edges .section-title {
         padding-top: 4rem;
         padding-bottom: 3rem;
+    }
+    .section-angled::before {
+        top: -3rem;
+    }
+    .section-angled::after {
+        bottom: -3rem;
+    }
+    .button-more {
+        margin-top: 0;
     }
 }

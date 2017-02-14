@@ -2,10 +2,10 @@ import React, {Component} from 'react';
 
 export default class WhoAmI extends Component {
     render() {
-        return <div className="section-content section-angled-content who-am-i-content">
-            <img className="image-round image-me" src="./app/resources/images/me.jpg" alt=""/>
+        return <div className="section-content section-angled-content paragraph-with-image who-am-i-content">
+            <img className="image-round" src="./app/resources/images/me.jpg" alt=""/>
 
-            <p className="about-me group">
+            <p className="group">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae totam nesciunt fuga laboriosam, voluptatem ad eius eveniet blanditiis laborum ipsam quam, quod magni aspernatur id sit, reprehenderit ex eligendi veniam.
             </p>
         </div>;

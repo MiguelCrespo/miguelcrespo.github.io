@@ -59,3 +59,23 @@
     -webkit-transform: scale3d(0.8, 0.8, 1);
     transform: scale3d(0.8, 0.8, 1);
 }
+
+.button-primary-inverted {
+    color: $colorWhite;
+}
+
+.button-primary-inverted::after {
+    background: $colorPrimary;
+}
+
+.button-primary-inverted::before {
+    border-color: $colorPrimary;
+}
+
+.button-primary-inverted:hover {
+    color: $colorPrimary;
+}
+
+.button-l {
+    padding: 0.8rem 3rem;
+}

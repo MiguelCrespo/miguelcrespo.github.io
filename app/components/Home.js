@@ -5,6 +5,7 @@ import HomeCover from './HomeCover';
 import WhoAmI from './WhoAmI';
 import Experience from './Experience';
 import Projects from './Projects';
+import AboutPage from './AboutPage';
 
 const experiences = [
     {
@@ -74,6 +75,12 @@ export default class Home extends Component {
                 sectionClass="section-padding section-edges experience"
                 title="Experience">
                 <Experience experiences={experiences}/>
+            </Section>
+
+            <Section
+                sectionClass="section-padding section-angled experience"
+                title="About this page">
+                <AboutPage/>
             </Section>
         </div>
     }
