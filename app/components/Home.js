@@ -55,6 +55,24 @@ const projects = [
         ],
         image_url: './app/resources/images/me.jpg',
         date: new Date('12/21/2014')
+    }, {
+        id: 3,
+        title: 'Algo 3',
+        description: 'My Description',
+        tags: [
+            'javascript', 'react'
+        ],
+        image_url: './app/resources/images/me.jpg',
+        date: new Date('12/21/2014')
+    }, {
+        id: 4,
+        title: 'Algo 4',
+        description: 'My Description',
+        tags: [
+            'javascript', 'react'
+        ],
+        image_url: './app/resources/images/me.jpg',
+        date: new Date('12/21/2014')
     }
 ];
 
@@ -77,20 +95,17 @@ export default class Home extends Component {
                 <Experience experiences={experiences}/>
             </Section>
 
+          <Section
+            sectionClass="section-padding section-angled projects"
+            title="Projects">
+            <Projects projects={projects}/>
+          </Section>
+
             <Section
-                sectionClass="section-padding section-angled experience"
+                sectionClass="section-padding section-edges experience"
                 title="About this page">
                 <AboutPage/>
             </Section>
         </div>
     }
 }
-
-/*
-Buggy component xD
-<Section
-                sectionClass="section-padding section-angled projects"
-                title="Projects">
-                <Projects projects={projects}/>
-            </Section>
- */

@@ -1,19 +1,23 @@
 .projects-content {
     display: flex;
-    flex-shrink: 0;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .projects-content__item {
     flex-grow: 1;
     cursor: pointer;
     overflow: hidden;
+    margin-bottom: .8rem;
 }
 
 .projects-content__item__child {
+    position: relative;
     display: flex;
     background-size: cover;
     min-height: 25rem;
     transition: transform .8s;
+    flex-basis: 100%;
 }
 
 .projects-content__item:hover .projects-content__item__child {
@@ -81,5 +85,21 @@
 @media (min-width: 576px) {
     .projects-content__item {
         flex-grow: 2;
+        margin-right: .8rem;
+        flex-basis: 48%;
+        max-width: 50%;
     }
+
+    .projects-content {
+        flex-direction: row;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .projects-content__item {
+    flex-grow: 3;
+    flex-basis: 30%;
+    max-width: 32%;
+  }
 }
