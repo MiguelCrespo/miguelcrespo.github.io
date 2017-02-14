@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 export default class ExperienceElement extends Component {
   componentWillMount() {
@@ -22,9 +22,18 @@ export default class ExperienceElement extends Component {
   render() {
     let startDate = this.props.experience.startDate;
     let endDate = this.props.experience.endDate;
-    let endDateTemp = endDate ? endDate : new Date();
+    let endDateTemp = endDate
+      ? endDate
+      : new Date();
+
+    let allMonths = endDateTemp.getMonth() - startDate.getMonth() + (12 * (endDateTemp.getFullYear() - startDate.getFullYear()));
     let numberYears = endDateTemp.getFullYear() - startDate.getFullYear();
-    let numberMonths = startDate.getMonth() - endDateTemp.getMonth();
+    let numberMonths = endDateTemp.getMonth() - startDate.getMonth();
+
+    if (numberMonths < 0) {
+      numberYears--;
+      numberMonths = numberMonths + 12;
+    }
 
     let durationString = '';
     if (numberYears > 0) {
@@ -40,12 +49,16 @@ export default class ExperienceElement extends Component {
         <img
           className="image-round image-company"
           src={this.props.experience.company.image_url}
-          alt={`${this.props.experience.company.name} Logo`} />
+          alt={`${this.props.experience.company.name} Logo`}/>
 
         <h2 className="experience-item__company__name">{this.props.experience.company.name}</h2>
 
-        {endDate ? null : <div><h5 className="experience-item__company__seconds">{Math.floor(this.state.secondsWorking)} secs</h5></div>}
-
+        {endDate
+          ? null
+          : <div>
+            <h5 className="experience-item__company__seconds">{Math.floor(this.state.secondsWorking)}
+              secs</h5>
+          </div>}
 
       </section>
       <section className="experience-item__details">
@@ -59,12 +72,10 @@ export default class ExperienceElement extends Component {
         <h1 className="experience-item__details__title">{this.props.experience.title}</h1>
 
         <h4 className="experience-item__details__dates">{`( ${startDate.toLocaleString('en-us', {
-          month: "short"
-        })} ${startDate.getFullYear()} - 
+            month: "short"})} ${startDate.getFullYear()} - 
                     ${endDate
-            ? `${endDate.toLocaleString('en-us', {
-              month: "short"
-            })} ${endDate.getFullYear()}` : 'Present'}
+              ? `${endDate.toLocaleString('en-us', {
+                month: "short"})} ${endDate.getFullYear()}` : 'Present'}
                     )`}</h4>
         <p className="experience-item__details__description">{this.props.experience.description}</p>
       </section>
