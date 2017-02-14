@@ -27,7 +27,7 @@
     text-align: center;
     color: $colorPrimary;
     font-weight: bold;
-    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 
 .experience-timeline {
@@ -69,17 +69,6 @@
     padding-top: .2rem;
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-    .experience-timeline {
-        display: block;
-    }
-    .experience-item__details {
-        margin-left: 6rem;
-        padding-left: 5rem;
-    }
-}
-
 .experience-item__company__seconds {
     margin-top: .5rem;
 }
@@ -92,4 +81,19 @@
 
 .experience-item__company__seconds-text {
     font-size: 1.3rem;
+}
+
+.experience-item__details__title, .experience-item__details__dates, .experience-item__details__description {
+    margin: 0;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .experience-timeline {
+        display: block;
+    }
+    .experience-item__details {
+        margin-left: 6rem;
+        padding-left: 5rem;
+    }
 }

@@ -51,7 +51,7 @@ export default class ExperienceElement extends Component {
           src={this.props.experience.company.image_url}
           alt={`${this.props.experience.company.name} Logo`}/>
 
-        <h2 className="experience-item__company__name">{this.props.experience.company.name}</h2>
+        <h3 className="experience-item__company__name">{this.props.experience.company.name}</h3>
 
         {endDate
           ? null
@@ -69,7 +69,7 @@ export default class ExperienceElement extends Component {
           {durationString}
         </div>
 
-        <h1 className="experience-item__details__title">{this.props.experience.title}</h1>
+        <h2 className="experience-item__details__title">{this.props.experience.title}</h2>
 
         <h4 className="experience-item__details__dates">{`( ${startDate.toLocaleString('en-us', {
             month: "short"})} ${startDate.getFullYear()} - 
