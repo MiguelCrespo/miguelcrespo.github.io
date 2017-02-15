@@ -11,14 +11,14 @@ export default class Header extends Component {
 
                 <div className="menu">
                     <input type="checkbox" id="menu__togle" className="menu__togle"/>
-                    <label className="fa fa-bars menu__togle-label" aria-hidden="true" aria-label="Menu" htmlFor="menu__togle"></label>
+                    <label className="fa fa-bars menu__togle-label" aria-hidden="true" aria-label="Menu" htmlFor="menu__togle"/>
                     <div className="menu__underlay" role="presentation"></div>
                     <nav className="menu-nav">
                         <ul className="menu-nav__container">
-                            <i className="menu-nav__item"><a href="#home">Home</a></i>
-                            <i className="menu-nav__item"><a href="#experience">Experience</a></i>
-                            <i className="menu-nav__item"><a href="#works">Works</a></i>
-                            <i className="menu-nav__item"><a href="#about-this">About this page</a></i>
+                            <li className="menu-nav__item"><a href="#home">Home</a></li>
+                            <li className="menu-nav__item"><a href="#experience">Experience</a></li>
+                            <li className="menu-nav__item"><a href="#works">Works</a></li>
+                            <li className="menu-nav__item"><a href="#about-this">About this page</a></li>
                         </ul>
                     </nav>
                 </div>

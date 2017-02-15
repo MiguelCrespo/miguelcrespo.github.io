@@ -1,92 +1,91 @@
 .section-title {
-    font-weight: bold;
-    color: $colorPrimary;
-    padding-bottom: 1.5rem;
-    position: relative;
-    z-index: 1;
+  font-weight: bold;
+  color: $colorPrimary;
+  padding-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
 }
 
 .section-padding {
-    padding-right: .8rem;
-    padding-left: .8rem;
-    padding-top: 2rem;
-    padding-bottom: 1.5rem;
+  padding: 2rem .8rem 1.5rem;
 }
 
 .section-angled {
-    background-color: $colorWhoAmIBackground;
+  background-color: $colorWhoAmIBackground;
 }
 
 .section-angled,
 .section-angled-content {
-    position: relative;
+  position: relative;
 }
 
 .section-angled-content {
-    z-index: 1;
+  z-index: 1;
 }
 
 .section-angled::before,
 .section-angled::after {
-    content: ' ';
-    height: 70%;
-    background-color: #F9F9F9;
-    left: 0;
-    display: block;
-    width: 100%;
-    position: absolute;
+  content: ' ';
+  height: 70%;
+  background-color: #F9F9F9;
+  left: 0;
+  display: block;
+  width: 100%;
+  position: absolute;
 }
 
 .section-angled::before {
-    top: -1rem;
-    transform: skewY(-3deg);
+  top: -1rem;
+  transform: skewY(-3deg);
 }
 
 .section-angled::after {
-    bottom: -1rem;
-    transform: skewY(3deg);
+  bottom: -1rem;
+  transform: skewY(3deg);
 }
 
 .button-more {
-    display: block;
-    margin: 0 auto;
-    margin-top: 2rem;
+  display: block;
+  margin: 2rem auto 0;
 }
 
 .paragraph-with-image {
-    >img {
-        width: 10rem;
-        float: left;
-        margin-right: 1.5rem;
-    }
-    >p {
-        color: #1C3A5D;
-        font-size: 1.6rem;
-        line-height: 2rem;
-    }
+  > img {
+    width: 10rem;
+    float: left;
+    margin-right: 1.5rem;
+  }
+  > p {
+    color: #1C3A5D;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-    .section-title {
-        text-align: center;
-        padding-bottom: 2rem;
-    }
-    .section-padding .section-content {
-        width: 70%;
-        margin: 0 auto;
-    }
-    .section-edges .section-title {
-        padding-top: 4rem;
-        padding-bottom: 3rem;
-    }
-    .section-angled::before {
-        top: -3rem;
-    }
-    .section-angled::after {
-        bottom: -3rem;
-    }
-    .button-more {
-        margin-top: 0;
-    }
+  .section-content {
+    max-width: 160rem;
+  }
+  .section-title {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  .section-padding .section-content {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .section-edges .section-title {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+  .section-angled::before {
+    top: -3rem;
+  }
+  .section-angled::after {
+    bottom: -3rem;
+  }
+  .button-more {
+    margin-top: 0;
+  }
 }
