@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import jump from 'jump.js'
 
 import Section from './Section';
 import HomeCover from './HomeCover';
@@ -78,33 +79,39 @@ const projects = [
 ];
 
 export default class Home extends Component {
+    componentDidMount() {
+        if (this.props.location.hash) {
+            jump(this.props.location.hash);
+        }
+    }
+
     render() {
         return <div>
-            <Section sectionClass="home-cover">
+            <Section sectionClass="home-cover" sectionId="home-cover">
                 <HomeCover/>
             </Section>
 
             <Section
                 sectionClass="section-padding section-angled who-am-i"
-                title="Who am I">
+                title="Who am I" sectionId="who-am-i">
                 <WhoAmI/>
             </Section>
 
             <Section
                 sectionClass="section-padding section-edges experience"
-                title="Experience">
+                title="Experience" sectionId="experiences">
                 <Experience experiences={experiences}/>
             </Section>
 
             <Section
                 sectionClass="section-padding section-angled projects"
-                title="Projects">
+                title="Projects" sectionId="projects">
                 <Projects projects={projects}/>
             </Section>
 
             <Section
                 sectionClass="section-padding section-edges experience"
-                title="About this page">
+                title="About this page" sectionId="about-page">
                 <AboutPage/>
             </Section>
 
