@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   context: __dirname + '/app',
@@ -10,7 +11,7 @@ module.exports = {
   output: {
     path: __dirname,
     publicPath: '/',
-    filename: 'bundle.js'
+    filename: 'bundle.[hash].js'
   },
 
   module: {
@@ -27,5 +28,13 @@ module.exports = {
       {test: /\.json$/, loader: 'json-loader'},
       {test: /\.jpg$/, loader: 'url-loader'}
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Miguel Crespo | Software Developer',
+      template: 'index.template.ejs',
+      inject: false,
+      favicon: 'resources/icons/icon.png'
+    })
+  ]
 };

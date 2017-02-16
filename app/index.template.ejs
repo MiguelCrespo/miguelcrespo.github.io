@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href=<%= 'app/' + htmlWebpackPlugin.options['favicon'] %>>
+</head>
+
+<body>
+<div id="container"></div>
+
+
+<script type="text/javascript"
+        src=<%= htmlWebpackPlugin['files']['chunks']['main']['entry'] %> async></script>
+</body>
+
+</html>
