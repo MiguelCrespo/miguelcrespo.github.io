@@ -1,5 +1,4 @@
 @import './styles/reset';
-
 @import './styles/variables';
 @import './styles/extras';
 @import './styles/buttons';
@@ -13,5 +12,9 @@
 
 body {
   font-size: 1.4rem;
+  font-family: sans-serif;
+}
+
+.wf-active body {
   font-family: 'Roboto', sans-serif;
 }
