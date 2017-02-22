@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ProgressiveImage from 'react-progressive-loading';
 
 export default class ExperienceElement extends Component {
   componentWillMount() {
@@ -46,10 +47,8 @@ export default class ExperienceElement extends Component {
 
     return <li className="experience-item">
       <section className="experience-item__company">
-        <img
-          className="image-round image-company"
-          src={this.props.experience.company.image_url}
-          alt={`${this.props.experience.company.name} Logo`}/>
+        <ProgressiveImage src={this.props.experience.company.image_url} className="image-round image-company"
+                          alt={`${this.props.experience.company.name} Logo`}/>
 
         <h3 className="experience-item__company__name">{this.props.experience.company.name}</h3>
 
@@ -72,10 +71,12 @@ export default class ExperienceElement extends Component {
         <h2 className="experience-item__details__title">{this.props.experience.title}</h2>
 
         <h4 className="experience-item__details__dates">{`( ${startDate.toLocaleString('en-us', {
-            month: "short"})} ${startDate.getFullYear()} - 
+          month: "short"
+        })} ${startDate.getFullYear()} -
                     ${endDate
-              ? `${endDate.toLocaleString('en-us', {
-                month: "short"})} ${endDate.getFullYear()}` : 'Present'}
+          ? `${endDate.toLocaleString('en-us', {
+            month: "short"
+          })} ${endDate.getFullYear()}` : 'Present'}
                     )`}</h4>
         <p className="experience-item__details__description">{this.props.experience.description}</p>
       </section>

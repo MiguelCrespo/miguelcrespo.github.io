@@ -614,7 +614,7 @@ babel-register@^6.22.0:
     mkdirp "^0.5.1"
     source-map-support "^0.4.2"
 
-babel-runtime@^6.18.0, babel-runtime@^6.22.0:
+babel-runtime@^6.18.0, babel-runtime@^6.22.0, babel-runtime@^6.6.1:
   version "6.22.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.22.0.tgz#1cf8b4ac67c77a4ddb0db2ae1f74de52ac4ca611"
   dependencies:
@@ -3307,6 +3307,12 @@ react-dom@^15.4.2:
     fbjs "^0.8.1"
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
+
+react-progressive-loading@^0.1.10:
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/react-progressive-loading/-/react-progressive-loading-0.1.10.tgz#62b9412de6fc517aaf08e6d9363a3d3ea36c5207"
+  dependencies:
+    babel-runtime "^6.6.1"
 
 react-router@^3.0.2:
   version "3.0.2"
