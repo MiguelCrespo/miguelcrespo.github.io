@@ -4,6 +4,7 @@
   "start_url": ".",
   "display": "standalone",
   "background_color": "#1c3a5d",
+  "theme_color": "#1c3a5d",
   "description": "A simple React-based progressive web app that displays Accelerated Mobile Page (AMP) content.",
   "icons": [
     {

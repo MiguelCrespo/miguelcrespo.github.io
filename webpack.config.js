@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var OfflinePlugin = require('offline-plugin')
 
 module.exports = {
   context: __dirname + '/app',
@@ -35,6 +36,11 @@ module.exports = {
       template: 'index.template.ejs',
       inject: false,
       favicon: 'resources/icons/icon.png'
+    }),
+    new OfflinePlugin({
+      externals: [
+        '/app/resources/images/me.jpg'
+      ]
     })
   ]
 };
