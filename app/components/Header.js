@@ -34,7 +34,7 @@ export default class Header extends Component {
 
               <li className="menu-nav__item"><a href="#experiences" onClick={() => {
                 this.scrollToComponent('#experiences');
-              }}>Experiences</a></li>
+              }}>Experience</a></li>
 
               <li className="menu-nav__item"><a href="#projects" onClick={() => {
                 this.scrollToComponent('#projects');
