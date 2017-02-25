@@ -18,4 +18,4 @@ export default class Experience extends Component {
 
 Experience.propTypes = {
     experiences: React.PropTypes.array.isRequired
-}
+};

@@ -1,5 +1,7 @@
-.footer{
-  background-color: $colorPrimary;
+.footer {
+  display: flex;
+  align-items: center;
+  background-color: $colorAccent;
   color: $colorWhite;
   height: 5rem;
 }

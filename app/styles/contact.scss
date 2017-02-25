@@ -1,0 +1,30 @@
+.contact {
+  background-color: $colorPrimary;
+  color: $colorWhite;
+
+  .section-title {
+    color: $colorWhite;
+    margin-bottom: 0;
+  }
+}
+
+.contact-items, .contact__email {
+  text-align: center;
+}
+
+.contact__email {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.contact-items__item {
+  display: inline-block;
+  font-size: 3rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+
+  a {
+    color: $colorWhite;
+
+  }
+}

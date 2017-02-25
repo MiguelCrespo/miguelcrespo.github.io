@@ -13,7 +13,17 @@ import './index.scss';
 
 WebFont.load({
   google: {
-    families: ['Roboto:300,400,700']
+    families: [
+      'Roboto:300,400,700'
+    ]
+  },
+  custom: {
+    families: [
+      'FontAwesome'
+    ],
+    urls: [
+      'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
+    ]
   },
   timeout: 2000
 });
