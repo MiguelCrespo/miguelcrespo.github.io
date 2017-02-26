@@ -86,4 +86,4 @@ export default class ExperienceElement extends Component {
 
 ExperienceElement.propTypes = {
   experience: React.PropTypes.object.isRequired
-}
+};

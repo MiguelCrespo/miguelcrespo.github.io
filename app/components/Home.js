@@ -42,6 +42,7 @@ const projects = [
   {
     id: 1,
     title: 'Algo',
+    shortDescription: 'My Description',
     description: 'My Description',
     tags: [
       'javascript', 'react'
@@ -51,6 +52,7 @@ const projects = [
   }, {
     id: 2,
     title: 'Algo 2',
+    shortDescription: 'My Description',
     description: 'My Description',
     tags: [
       'javascript', 'react'
@@ -60,6 +62,7 @@ const projects = [
   }, {
     id: 3,
     title: 'Algo 3',
+    shortDescription: 'My Description',
     description: 'My Description',
     tags: [
       'javascript', 'react'
@@ -69,6 +72,7 @@ const projects = [
   }, {
     id: 4,
     title: 'Algo 4',
+    shortDescription: 'My Description',
     description: 'My Description',
     tags: [
       'javascript', 'react'

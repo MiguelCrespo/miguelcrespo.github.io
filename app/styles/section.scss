@@ -3,10 +3,10 @@
   color: $colorPrimary;
   padding-bottom: 1.5rem;
   position: relative;
-  z-index: 1;
 }
 
 .section-padding {
+  position: relative;
   padding: 2rem .8rem 1.5rem;
 }
 
@@ -17,16 +17,19 @@
 .section-angled,
 .section-angled-content {
   position: relative;
+  z-index: 1;
 }
 
-.section-angled-content {
-  z-index: 1;
+// Sorry...
+.about-content {
+  position: static;
 }
 
 .section-angled::before,
 .section-angled::after {
   content: ' ';
   height: 70%;
+  max-height: 100px;
   background-color: #F9F9F9;
   left: 0;
   display: block;
