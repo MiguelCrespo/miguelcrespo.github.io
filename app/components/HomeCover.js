@@ -7,7 +7,7 @@ export default class HomeCover extends Component {
     super(props);
 
     this.state = {
-      words: ['Frontend Developer', 'JS Ninja']
+      words: ['Frontend Developer', 'Backend Developer', 'JS Ninja']
     };
   }
 

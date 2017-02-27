@@ -18,4 +18,4 @@ export default class Projects extends Component {
 
 Projects.propTypes = {
     projects: React.PropTypes.array.isRequired
-}
+};
