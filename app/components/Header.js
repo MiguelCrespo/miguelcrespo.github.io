@@ -10,7 +10,7 @@ export default class Header extends Component {
   }
 
   render() {
-    return <header className="header">
+    return <header className="header hidden-print">
       <div className="header__content">
         <div className="brand" title="Miguel Crespo">
           <span className="brand-mobile">MC</span>

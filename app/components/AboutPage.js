@@ -7,7 +7,7 @@ export default class AboutPage extends Component {
   render() {
     return <div className="section-content about-content section-angled-content paragraph-with-image">
 
-      <ProgressiveImage src="./app/resources/images/me.jpg" className="image-round image-me"
+      <ProgressiveImage src="./app/resources/images/react.png" className="image-round image-me"
                         alt="About this page image"/>
 
       <p className="about-me group">

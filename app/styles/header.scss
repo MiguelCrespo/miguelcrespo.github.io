@@ -131,3 +131,9 @@
     color: $colorWhite;
   }
 }
+
+@media print {
+  .hidden-print {
+    display: none !important;
+  }
+}

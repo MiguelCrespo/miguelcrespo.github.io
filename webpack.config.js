@@ -35,7 +35,20 @@ module.exports = {
       title: 'Miguel Crespo | Software Developer',
       template: 'index.template.ejs',
       inject: false,
-      favicon: 'resources/icons/icon.png'
+      favicon: 'resources/icons/icon.png',
+      canonical: 'https://miguelcrespo.github.io',
+      description: 'Personal website',
+      author: 'Miguel Crespo',
+      subject: 'Personal Website',
+      og: {
+        type: 'Personal Website',
+        title: 'Miguel Crespo | Software Developer',
+        description: 'Personal website',
+        image: '',
+        url: 'https://miguelcrespo.github.io',
+        site_name: 'Miguel Crespo | Software Developer',
+        locale: 'en'
+      }
     }),
     new OfflinePlugin({
       externals: [
