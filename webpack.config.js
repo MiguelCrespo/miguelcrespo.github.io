@@ -52,7 +52,21 @@ module.exports = {
     }),
     new OfflinePlugin({
       externals: [
-        '/app/resources/images/me.jpg'
+        '/app/resources/images/pexels-photo-220444.jpeg',
+        '/app/resources/images/me.jpg',
+        '/app/resources/images/clickdelivery.jpg',
+        '/app/resources/images/erasmeet.jpg',
+        '/app/resources/images/universidad-del-magdalena.jpg',
+        '/app/resources/images/domicilios-responsive.png',
+        '/app/resources/images/domicilios-responsive-2.png',
+        '/app/resources/images/erasmeet-home.png',
+        '/app/resources/images/erasmeet-me.png',
+        '/app/resources/images/lighthouse.png',
+        '/app/resources/images/modern-database.png',
+        '/app/resources/images/pension-app.png',
+        '/app/resources/images/react.jpg',
+        '/app/resources/images/this-page.png',
+        '/app/resources/images/this-page-mobile.png',
       ]
     })
   ]
