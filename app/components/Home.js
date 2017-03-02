@@ -116,6 +116,7 @@ const projects = [
     image_url: './app/resources/images/this-page.png',
     links: [],
     images: [
+      './app/resources/images/lighthouse.png',
       './app/resources/images/this-page.png',
       './app/resources/images/this-page-mobile.png'
     ],
