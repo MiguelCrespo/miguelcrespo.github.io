@@ -1,10 +1,4 @@
 # Personal Page
 My personal page
 
-###TODO
-
-- Add animations to experience component.
-- Create modal component.
-- Create modal component animations.
-- Show message to users that does not have js enabled.
-- Add browser happy div.
+This page is a Progressive Web App that was built with React, ES6, SASS and webpack to allow me have a very simple project where I can test easily new technologies and features from web platforms.
