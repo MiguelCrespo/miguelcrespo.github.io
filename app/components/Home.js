@@ -64,6 +64,7 @@ const experiences = [
 ];
 
 const projects = [
+
   {
     id: 1,
     title: 'ClickDelivery',
@@ -73,7 +74,7 @@ const projects = [
     tags: [
       'javascript', 'react', 'jquery', 'php'
     ],
-    image_url: './app/resources/images/me.jpg',
+    image_url: './app/resources/images/domicilios-responsive.png',
     links: [
       {
         id: 1,
@@ -82,9 +83,7 @@ const projects = [
       }
     ],
     images: [
-      './app/resources/images/domicilios-responsive.png'
-    ],
-    images: [
+      './app/resources/images/domicilios-responsive.png',
       './app/resources/images/domicilios-responsive-2.png'
     ],
     date: new Date('12/21/2014')
@@ -92,15 +91,38 @@ const projects = [
     id: 2,
     title: 'Erasmeet App',
     shortDescription: 'Mobile apps',
-    description: 'Mobile app developed for the Erasmeet Limited company using the latest technologies in the market (AngularJS, Ionic Framework, Typescript, Gulp, Sass, Socket.IO, SailsJS, NodeJS, Etc).',
+    description: 'Mobile app developed for the Erasmeet Limited company using the latest technologies in the market ' +
+    '(AngularJS, Ionic Framework, Typescript, Gulp, Sass, Socket.IO, SailsJS, NodeJS, Etc).',
     tags: [
       'javascript', 'ionic', 'angularjs', 'android', 'ios'
     ],
-    image_url: './app/resources/images/me.jpg',
-    images: [],
+    links: [],
+    image_url: './app/resources/images/erasmeet-home.png',
+    images: [
+      './app/resources/images/erasmeet-home.png',
+      './app/resources/images/erasmeet-me.png',
+    ],
     date: new Date('12/21/2014')
-  }, {
+  },
+  {
     id: 3,
+    title: 'Personal Page',
+    shortDescription: 'My personal page',
+    description: 'Create my personal page using technologies like React, ES6, SASS, Webpack to make a good personal site' +
+    ' that in the future I hope is going to serve me as my blog.',
+    tags: [
+      'Javascript', 'React', 'ES6', 'SASS'
+    ],
+    image_url: './app/resources/images/this-page.png',
+    links: [],
+    images: [
+      './app/resources/images/this-page.png',
+      './app/resources/images/this-page-mobile.png'
+    ],
+    date: new Date('03/02/2016')
+  },
+  {
+    id: 4,
     title: 'PensionAPP',
     shortDescription: 'AngularJS website',
     description: 'Web application developed where I implemented technologies like PHP (Laravel), CSS (Bootstrap), Javascript(AngularJS, CoffeeScript), GIT, and other. ' +
@@ -108,7 +130,7 @@ const projects = [
     tags: [
       'javascript', 'angularjs', 'laravel'
     ],
-    image_url: './app/resources/images/me.jpg',
+    image_url: './app/resources/images/pension-app-home.png',
     links: [
       {
         id: 1,
@@ -121,10 +143,12 @@ const projects = [
         url: 'https://bitbucket.org/miguelcrespo/pensioncoffee'
       },
     ],
-    images: [],
+    images: [
+      './app/resources/images/pension-app-home.png'
+    ],
     date: new Date('12/21/2014')
   }, {
-    id: 4,
+    id: 5,
     title: 'Modern DataBase',
     shortDescription: 'Java ORM for MySQL',
     description: 'ModerDataBase was a simple ORM for MySQL that I developed long time ago when I was learning about Java and because I was come from a Laravel background I was looking for a ORM like ' +
@@ -132,7 +156,7 @@ const projects = [
     tags: [
       'java', 'orm'
     ],
-    image_url: './app/resources/images/me.jpg',
+    image_url: './app/resources/images/modern-database.png',
     links: [
       {
         id: 1,
@@ -140,7 +164,9 @@ const projects = [
         url: 'https://github.com/cresposoft/moderndatabase'
       }
     ],
-    images: [],
+    images: [
+      './app/resources/images/modern-database.png'
+    ],
     date: new Date('12/21/2014')
   }
 ];

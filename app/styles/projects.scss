@@ -86,6 +86,37 @@
   transform: translateY(0rem);
 }
 
+.project-item-modal {
+  .modal-header {
+    margin-left: -.8rem;
+    margin-right: -.8rem;
+    padding-left: 0.8rem;
+    padding-right: .8rem;
+  }
+}
+
+.project-item-modal__title {
+  color: $colorPrimary;
+  margin-bottom: .5rem;
+}
+
+.project-item-modal__tags li {
+  display: initial;
+  margin-right: 1rem;
+  background-color: $colorPrimary;
+  color: $colorWhite;
+  border-radius: 50px;
+  font-size: 1.0rem;
+  padding: .5rem 1rem;
+}
+
+.project-item-modal__images li img {
+  width: 100%;
+  max-width: 30rem;
+  display: block;
+  margin: 0 auto 2rem;
+}
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   .projects-content__item {
