@@ -20,7 +20,7 @@ const experiences = [
     company: {
       id: 1,
       name: 'ClickDelivery',
-      image_url: './app/resources/images/clickdelivery.png'
+      image_url: './app/resources/images/clickdelivery.jpg'
     },
     startDate: new Date('02/02/2016')
   }, {
@@ -32,7 +32,7 @@ const experiences = [
     company: {
       id: 2,
       name: 'Erasmeet',
-      image_url: './app/resources/images/erasmeet.png'
+      image_url: './app/resources/images/erasmeet.jpg'
     },
     startDate: new Date('03/02/2015'),
     endDate: new Date('01/31/2016')
