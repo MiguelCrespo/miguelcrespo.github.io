@@ -12,21 +12,28 @@ import Footer from './Footer';
 const experiences = [
   {
     id: 1,
-    title: 'Frontend Developer',
-    description: 'Working in a start-up with almost 1 million of users and growing up and presence in Colombia, ' +
-    'Ecuador and Perú. My main responsibility is for the production, modification and maintenance of the web application ' +
-    'and its interface (Using frameworks like AngularJS, ReactJS, JQuery), improve the general performance of the legacy ' +
-    'code and in general helping to make a better product every day.',
+    title: 'Frontend Tech Lead',
+    description: `Develop a completely new web application with the latest technologies to achieve a better user experience for one of the larger colombian tech companies.`,
     company: {
       id: 1,
-      name: 'ClickDelivery',
-      image_url: './app/resources/images/clickdelivery.jpg'
+      name: 'Domicilios.com',
+      image_url: './app/resources/images/domicilios.png'
     },
+    prizes: [
+      {
+        title: 'Strongest Next Gen Web Engagement',
+        description: `My team won the prize "Strongest Next Gen Web
+        Engagement" a prize given by Google where more than 15 companies around the world
+        participated and after the project was finished the company saw a dramatic growth of the
+        CVR in the mobile web.`,
+        entity: 'https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg'
+      }
+    ],
     startDate: new Date('02/02/2016')
   }, {
     id: 2,
     title: 'Software Developer',
-    description: 'I developed an application for Android and IOS where Erasmus students can find the best plans around them and enjoy their Erasmus year!' +
+    description: 'I developed an application for Android and iOS where Erasmus students can find the best plans around them and enjoy their Erasmus year!' +
     'This apps had: Chat with images, Push Notifications, Socket communication, Auth with Facebook and Twitter, ' +
     'Camera, GeoPosition features, Social network(Friends, invitations, privacy, etc), User can view and create his own events and share with the community.',
     company: {
