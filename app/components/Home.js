@@ -79,17 +79,17 @@ const projects = [
     tags: [
       'React', 'Redux', 'Redis', 'Webpack', 'Prettier', 'Node.js'
     ],
-    image_url: './app/resources/images/domicilios.com_bogota.png',
+    image_url: './app/resources/images/domicilios.com_.png',
     links: [
       {
         id: 1,
-        name: 'Domicilios.com',
+        name: 'Domicilios.com site',
         url: 'https://domicilios.com/bogota'
       }
     ],
     images: [
-      './app/resources/images/domicilios.com_bogota.png',
-      './app/resources/images/domicilios-responsive-2.png'
+      './app/resources/images/domicilios.com_.png',
+      './app/resources/images/domicilios.com_ (1).png'
     ],
     date: new Date('07/02/2017')
   },
