@@ -20,8 +20,8 @@ export default class WhoAmI extends Component {
           className="image-round"
         />
         <p>
-          Hi. I’m <strong>Miguel</strong>, a Senior Frontend Developer from
-          Colombia with Full Stack background and solid foundations about programming with experience
+          Hi. I’m <strong>Miguel</strong>, a Senior Software Developer from
+          Colombia with solid foundations about programming with experience
           building and leading complex and large applications used by millions
           of users monthly. I have more than 3 years of demonstrated experience,
           working with multidisciplinary teams. I'm always trying to improve
@@ -48,6 +48,7 @@ export default class WhoAmI extends Component {
           <ul>
             <li>Javascript (ES6, TypeScript, CoffeeScript)</li>
             <li>React</li>
+            <li>Webpack</li>
             <li>AngularJS</li>
             <li>Ionic</li>
             <li>NodeJS</li>

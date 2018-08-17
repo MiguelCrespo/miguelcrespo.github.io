@@ -18,7 +18,7 @@ export default class HomeCover extends Component {
              classes="home-cover__content__header" speed="100"/>
 
       <span className="home-cover__content__header__content">
-                Hello, I'm Miguel a software developer in love with technology
+                Hi, I'm Miguel a software developer ;)
             </span>
 
       <button className="button button-primary button-contact button-xl" onClick={() => {

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ProgressiveImage from 'react-progressive-loading';
+import Award from './Award';
 
 export default class ExperienceElement extends Component {
   componentWillMount() {
@@ -79,6 +80,8 @@ export default class ExperienceElement extends Component {
           })} ${endDate.getFullYear()}` : 'Present'}
                     )`}</h4>
         <p className="experience-item__details__description">{this.props.experience.description}</p>
+
+        {this.props.experience.awards && this.props.experience.awards.length > 0 && this.props.experience.awards.map(award => <Award {...award} />)}
       </section>
     </li>;
   }
