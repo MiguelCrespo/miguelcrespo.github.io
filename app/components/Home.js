@@ -11,9 +11,28 @@ import Footer from './Footer';
 
 const experiences = [
   {
+    id: 5,
+    title: 'Software Engineer',
+    startDate: new Date('07/01/2019'),
+    description: '',
+    location: {
+      title: 'Berlin, Germany',
+      map_url: 'https://www.google.com/maps/place/Berlin/@52.5069312,13.1445508,10z'
+    },
+    company: {
+      id: 4,
+      name: 'Delivery Hero',
+      image_url: './app/resources/images/domicilios.png'
+    },
+  },
+  {
     id: 1,
     title: 'Frontend Tech Lead',
-    description: `Develop a completely new web application with the latest technologies to achieve a better user experience for one of the larger colombian tech companies using React, Redux, Javascript, Redis, ES6/7, Prettier and others.`,
+    description: `Developed a completely new web application with the latest technologies to achieve a better user experience for one of the larger colombian tech companies using React, Redux, Javascript, Redis, ES6/7, Prettier and others.`,
+    location: {
+      title: 'Bogotá, Colombia',
+      map_url: 'https://www.google.com/maps/place/Bogota,+Colombia/@4.6486259,-74.2478943,11z'
+    },
     company: {
       id: 1,
       name: 'Domicilios.com',
@@ -23,19 +42,24 @@ const experiences = [
       {
         title: 'Strongest Next Gen Web Engagement',
         description: `My team won the prize "Strongest Next Gen Web
-        Engagement" a prize given by Google where more than 15 companies from the holding around the world
-        participated and after the project was finished the company saw a dramatic growth of the
+        Engagement" a prize given by Google where many companies from the holding around the world
+        participated (DH). After the project was finished the company saw a dramatic growth of the
         CVR in the mobile web.`,
         entity: 'https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg'
       }
     ],
-    startDate: new Date('02/02/2016')
+    startDate: new Date('02/02/2016'),
+    endDate: new Date('06/29/2019')
   }, {
     id: 2,
     title: 'Software Developer',
     description: 'I developed an application for Android and iOS where Erasmus students can find the best plans around them and enjoy their Erasmus year!' +
       'This apps had: Chat with images, Push Notifications, Socket communication, Auth with Facebook and Twitter, ' +
       'Camera, GeoPosition features, Social network(Friends, invitations, privacy, etc), User can view and create his own events and share with the community.',
+    location: {
+      title: 'Santa Marta, Colombia',
+      map_url: 'https://www.google.com/maps/place/Santa+Marta,+Magdalena,+Colombia/@11.2316073,-74.2174166,13z'
+    },
     company: {
       id: 2,
       name: 'Erasmeet',
@@ -49,6 +73,10 @@ const experiences = [
     description: 'I have worked at Universidad del Magdalena helping student to learn the Object Oriented ' +
       'programming (That is teach with Java) and Android programming. This was only for 6 months but ' +
       'I was renewed by good performance in the area until December 2015 (The max allowed time for that work)',
+    location: {
+      title: 'Santa Marta, Colombia',
+      map_url: 'https://www.google.com/maps/place/Santa+Marta,+Magdalena,+Colombia/@11.2316073,-74.2174166,13z'
+    },
     company: {
       id: 3,
       name: 'Universidad del Magdalena',
@@ -56,21 +84,34 @@ const experiences = [
     },
     startDate: new Date('02/01/2015'),
     endDate: new Date('12/31/2015')
-  }, {
-    id: 4,
-    title: 'Seminarist',
-    description: 'I imparted an one week course (20 Hrs) about Android Programming to enthusiasts student who was interested in this area, since November 30 to December 4 of 2016.',
-    company: {
-      id: 3,
-      name: 'Universidad del Magdalena',
-      image_url: './app/resources/images/universidad-del-magdalena.jpg'
-    },
-    startDate: new Date('11/30/2015'),
-    endDate: new Date('12/04/2015')
   }
 ];
 
 const projects = [
+  {
+    id: 7,
+    title: 'Bookmark It',
+    shortDescription: 'The only extension that lets you create awesome notes on Youtube videos',
+    description: `Bookmark It is used by more than 2000 people weekly and it is the only extension that lets you create awesome bookmarks on Youtube videos while showing you the best part of videos so you don't waste your time seeing non-useful information.`,
+    tags: [
+      'React', 'Typescript', 'Webpack', 'Firebase', 'Chrome', 'Firefox'
+    ],
+    image_url: './app/resources/images/projects/bookmark-it/face.png',
+    links: [
+      {
+        id: 1,
+        name: 'Bookmark it site',
+        url: 'https://bookmark-it.happydevelopers.co/'
+      }
+    ],
+    images: [
+      './app/resources/images/projects/bookmark-it/1.jpg',
+      './app/resources/images/projects/bookmark-it/2.jpg',
+      './app/resources/images/projects/bookmark-it/3.jpg',
+      './app/resources/images/projects/bookmark-it/4.jpg',
+    ],
+    date: new Date('07/02/2017')
+  },
   {
     id: 6,
     title: 'Domicilios.com PWA',
@@ -95,7 +136,7 @@ const projects = [
   },
   {
     id: 1,
-    title: 'Old ClickDelivery site',
+    title: 'Former ClickDelivery site',
     shortDescription: 'Refactor of the Clickdelivery site',
     description: 'Migrate the ClickDelivery website that was never meant to be responsive and mobile friendly to a new ' +
       'and cool website that work with almost every smartphone in the market.',
@@ -115,7 +156,8 @@ const projects = [
       './app/resources/images/domicilios-responsive-2.png'
     ],
     date: new Date('12/21/2014')
-  }, {
+  },
+  {
     id: 2,
     title: 'Erasmeet App',
     shortDescription: 'Mobile apps',
@@ -176,11 +218,12 @@ const projects = [
       './app/resources/images/pension-app-home.png'
     ],
     date: new Date('12/21/2014')
-  }, {
+  }, 
+  {
     id: 5,
     title: 'Modern DataBase',
     shortDescription: 'Java ORM for MySQL',
-    description: 'ModerDataBase was a simple ORM for MySQL that I developed long time ago when I was learning about Java and because I was come from a Laravel background I was looking for a ORM like ' +
+    description: 'ModerDataBase was a simple ORM for MySQL that I developed long time ago when I was learning Java, because I came from a Laravel background I was looking for an ORM like ' +
       'Eloquent and I did not find one so I started to create one until... I found Hibernate :)',
     tags: [
       'java', 'orm'
@@ -243,17 +286,17 @@ export default class Home extends Component {
 
         <ul className="contact-items">
           <li className="contact-items__item">
-            <a href="https://www.linkedin.com/in/miguelcrespov/">
+            <a href="https://www.linkedin.com/in/miguelcrespov/" target="_blank">
               <i className="fa fa-linkedin" aria-hidden="true" />
             </a>
           </li>
           <li className="contact-items__item">
-            <a href="https://www.facebook.com/MiguelCrespoV">
+            <a href="https://www.facebook.com/MiguelCrespoV" target="_blank">
               <i className="fa fa-facebook" aria-hidden="true" />
             </a>
           </li>
           <li className="contact-items__item">
-            <a href="https://github.com/MiguelCrespo">
+            <a href="https://github.com/MiguelCrespo" target="_blank">
               <i className="fa fa-github" aria-hidden="true" />
             </a>
           </li>

@@ -73,6 +73,7 @@
 
 .project-item-details__description {
   transition: .8s transform .2s;
+  max-width: 90%;
 }
 
 .project-item-details__icon,
@@ -101,6 +102,11 @@
   margin-bottom: .5rem;
 }
 
+.project-item-modal__tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .project-item-modal__tags li {
   display: initial;
   margin-right: 1rem;
@@ -109,6 +115,7 @@
   border-radius: 50px;
   font-size: 1.0rem;
   padding: .5rem 1rem;
+  margin-bottom: .5rem;
 }
 
 .project-item-modal__images li img {

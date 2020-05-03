@@ -29,8 +29,8 @@ export default class ExperienceElement extends Component {
       : new Date();
 
     let allMonths = endDateTemp.getMonth() - startDate.getMonth() + (12 * (endDateTemp.getFullYear() - startDate.getFullYear()));
-    let numberYears = endDateTemp.getFullYear() - startDate.getFullYear();
-    let numberMonths = endDateTemp.getMonth() - startDate.getMonth();
+    let numberYears = Math.floor(allMonths / 12);
+    let numberMonths = Math.ceil(allMonths % 12);
 
     if (numberMonths < 0) {
       numberYears--;
@@ -71,6 +71,12 @@ export default class ExperienceElement extends Component {
 
         <h2 className="experience-item__details__title">{this.props.experience.title}</h2>
 
+        <h4 className="experience-item__details__location">
+          {this.props.experience.location.title}
+          <a className="experience-item__details__location__open" href={ this.props.experience.location.map_url} target="_blank">
+            <i className="fa fa-external-link" aria-hidden="true"></i>
+          </a>
+        </h4>
         <h4 className="experience-item__details__dates">{`( ${startDate.toLocaleString('en-us', {
           month: "short"
         })} ${startDate.getFullYear()} -

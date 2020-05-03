@@ -21,10 +21,13 @@ export default class AboutPage extends Component {
                         alt="About this page image"/>
 
       <p className="group">
-        This page is a <strong>Progressive Web App</strong> that was built with <strong>React</strong>,
-        <strong> ES6</strong>, <strong>SASS</strong> and <strong>webpack</strong> to allow me
+        This page is a <strong>Progressive Web App (PWA)</strong> that was built with <strong>React</strong>,
+        <strong> ES6</strong>, <strong>SASS</strong> and <strong>webpack</strong> with no <strong>CSS Framework</strong> to
         have a very simple project where I can
         test easily new technologies and features from web platforms.
+        <br/>
+        <br/>
+         <strong>Probably needs an update since this page was written 4 years ago</strong>.
       </p>
 
       <MoreInfoComponent isOpen={this.state.moreInfo}>
