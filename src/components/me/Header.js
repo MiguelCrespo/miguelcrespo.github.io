@@ -2,7 +2,8 @@ import React, { Component } from "react"
 import jump from "jump.js"
 
 export default class Header extends Component {
-  scrollToComponent(componentId) {
+  scrollToComponent(e, componentId) {
+    e.preventDefault()
     let toggle
 
     if (typeof document !== `undefined`)
@@ -34,8 +35,8 @@ export default class Header extends Component {
                 <li className="menu-nav__item">
                   <a
                     href="#home-cover"
-                    onClick={() => {
-                      this.scrollToComponent("#home-cover")
+                    onClick={e => {
+                      this.scrollToComponent(e, "#home-cover")
                     }}
                   >
                     Home
@@ -45,8 +46,8 @@ export default class Header extends Component {
                 <li className="menu-nav__item">
                   <a
                     href="#who-am-i"
-                    onClick={() => {
-                      this.scrollToComponent("#who-am-i")
+                    onClick={e => {
+                      this.scrollToComponent(e, "#who-am-i")
                     }}
                   >
                     Who am I
@@ -56,8 +57,8 @@ export default class Header extends Component {
                 <li className="menu-nav__item">
                   <a
                     href="#experiences"
-                    onClick={() => {
-                      this.scrollToComponent("#experiences")
+                    onClick={e => {
+                      this.scrollToComponent(e, "#experiences")
                     }}
                   >
                     Experience
@@ -67,8 +68,8 @@ export default class Header extends Component {
                 <li className="menu-nav__item">
                   <a
                     href="#projects"
-                    onClick={() => {
-                      this.scrollToComponent("#projects")
+                    onClick={e => {
+                      this.scrollToComponent(e, "#projects")
                     }}
                   >
                     Projects
@@ -77,20 +78,9 @@ export default class Header extends Component {
 
                 <li className="menu-nav__item">
                   <a
-                    href="#about-page"
-                    onClick={() => {
-                      this.scrollToComponent("#about-page")
-                    }}
-                  >
-                    About this page
-                  </a>
-                </li>
-
-                <li className="menu-nav__item">
-                  <a
                     href="#contact"
-                    onClick={() => {
-                      this.scrollToComponent("#contact")
+                    onClick={e => {
+                      this.scrollToComponent(e, "#contact")
                     }}
                   >
                     Contact

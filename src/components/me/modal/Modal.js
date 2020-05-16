@@ -10,10 +10,10 @@ export default class Modal extends Component {
   render() {
     if (typeof window === `undefined`) return null
     let isOpen = this.props.isOpen ? " modal-open" : ""
-    if (isOpen && this._body.className.indexOf("modal-open") === -1) {
-      this._body.className += "modal-open"
+    if (isOpen && this._body.classList.contains("modal-open") === -1) {
+      this._body.classList.add("modal-open")
     } else {
-      this._body.className = ""
+      this._body.classList.remove("modal-open")
     }
 
     return (

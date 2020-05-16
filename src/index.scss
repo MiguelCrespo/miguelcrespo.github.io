@@ -1,21 +1,67 @@
-// @import "./styles/reset";
-@import "./styles/variables";
-@import "./styles/extras";
-@import "./styles/buttons";
-@import "./components/me/modal/modal";
-@import "./styles/more-info";
-@import "./styles/skill-bar";
+html.me {
+  @import "./styles/reset";
+  // Just for backward compatibily with the old page
+  line-height: 1.15; /* 2 */
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+  font-size: 62.5%;
 
-@import "./styles/header";
-@import "./styles/section";
-@import "./styles/home-cover";
-@import "./styles/who-am-i";
-@import "./styles/experience";
-@import "./styles/projects";
-@import "./styles/footer";
-@import "./styles/contact";
+  @import "./styles/variables";
+  @import "./styles/extras";
+  @import "./styles/buttons";
+  @import "./components/me/modal/modal";
+  @import "./styles/more-info";
+  @import "./styles/skill-bar";
 
-body {
+  @import "./styles/header";
+  @import "./styles/section";
+  @import "./styles/home-cover";
+  @import "./styles/who-am-i";
+  @import "./styles/experience";
+  @import "./styles/projects";
+  @import "./styles/footer";
+  @import "./styles/contact";
+}
+
+html.me body {
   font-size: 1.4rem;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  small {
+    font-family: "Roboto", sans-serif;
+  }
+
+  ul,
+  ol {
+    margin-left: 0;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+  }
+
+  h4 {
+    line-height: 1.15;
+    letter-spacing: normal;
+    text-transform: none;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  a {
+    box-shadow: none;
+  }
 }

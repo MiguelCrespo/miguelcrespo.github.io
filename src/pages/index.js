@@ -11,7 +11,8 @@ import "font-awesome/css/font-awesome.css"
 import Header from "../components/me/Header"
 import SEO from "../components/seo"
 
-// import "../index.scss"
+import "../index.scss"
+import { Helmet } from "react-helmet"
 
 const experiences = [
   {
@@ -253,7 +254,25 @@ const Home = ({ location }) => {
 
   return (
     <div>
-      <SEO title={"Software Developer"} />
+      <Helmet
+        script={[
+          {
+            type: "text/javascript",
+            innerHTML: `
+            if (
+              !document.documentElement.classList.contains("me")
+            ) {
+              document.documentElement.classList.add("me");
+            }
+          `,
+          },
+        ]}
+      />
+      <SEO
+        absoluteTitle
+        title="Miguel Crespo | Software Developer"
+        description="Personal Website"
+      />
       <Header />
       <Section sectionClass="home-cover" sectionId="home-cover">
         <HomeCover />
@@ -279,7 +298,6 @@ const Home = ({ location }) => {
       >
         <Projects projects={projects} />
       </Section>
-
       <Section
         sectionClass="section-padding section-edges contact"
         title="Contact"

@@ -5,11 +5,13 @@
 .experience-item {
   display: flex;
   min-height: 15rem;
+  margin-bottom: 0;
 }
 
 .experience-item__company {
   flex-grow: 1;
   max-width: 10rem;
+  padding-bottom: 1.9rem;
 }
 
 .experience-item__details {
@@ -21,6 +23,7 @@
 
 .image-company {
   width: 10rem;
+  max-width: 10rem;
 }
 
 .experience-item__company__name {
@@ -71,6 +74,7 @@
 
 .experience-item__company__seconds {
   margin-top: 0.5rem;
+  font-size: 1.12rem;
 }
 
 .experience-item__company__seconds,
@@ -111,6 +115,7 @@
 
 .award__entity {
   width: 5rem;
+  min-width: 5rem;
   height: 5rem;
   margin-right: 0.8rem;
 }
