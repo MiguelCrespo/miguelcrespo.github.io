@@ -1,0 +1,67 @@
+.home-cover {
+  background-image: url("/resources/images/pexels-photo-220444.jpeg");
+  background-size: cover;
+  min-height: 50rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: -5rem;
+}
+
+.home-cover__content {
+  color: $colorWhite;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+.home-cover__content__header__content {
+  display: block;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: lighter;
+  line-height: 3rem;
+}
+
+.home-cover__content__header {
+  margin-top: 0;
+  margin-bottom: 3rem;
+  font-size: 6.1rem;
+  min-height: 8rem;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .home-cover {
+    height: 45rem;
+    background-position-y: -3rem;
+    padding: 1.5rem;
+  }
+
+  .home-cover__content {
+    max-width: 160rem;
+  }
+
+  .home-cover__content__header__content {
+    font-size: 3.8rem;
+    margin: 0.5rem 0 2rem;
+    line-height: normal;
+  }
+  .button-contact {
+    padding: 0.8rem 3rem;
+  }
+}
+
+@media (min-width: 920px) {
+  .home-cover__content {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home-cover__content {
+    width: 60%;
+  }
+}

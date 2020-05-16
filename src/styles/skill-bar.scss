@@ -1,0 +1,33 @@
+.skill-bar {
+  height: 3rem;
+  position: relative;
+}
+
+.skill-bar-title {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.8rem;
+}
+
+.skill-bar-progress {
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  height: 100%;
+}
+
+.skill-bar-progress-active {
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+}
