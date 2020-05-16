@@ -1,0 +1,21 @@
+// @import "./styles/reset";
+@import "./styles/variables";
+@import "./styles/extras";
+@import "./styles/buttons";
+@import "./components/me/modal/modal";
+@import "./styles/more-info";
+@import "./styles/skill-bar";
+
+@import "./styles/header";
+@import "./styles/section";
+@import "./styles/home-cover";
+@import "./styles/who-am-i";
+@import "./styles/experience";
+@import "./styles/projects";
+@import "./styles/footer";
+@import "./styles/contact";
+
+body {
+  font-size: 1.4rem;
+  font-family: sans-serif;
+}
