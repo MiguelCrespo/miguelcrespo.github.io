@@ -14,7 +14,7 @@ Once of those was when I tried to render a simple list with `react` . I got this
        but an expression was expected of type React.element
 ```
 
-And let me tell you it was a loong run to find how to solve because apparently the language has changed a lot during the last year(s).
+And let me tell you, it was a loong run to find how to solve it because apparently the language has changed a lot during the last year(s).
 
 This basically was me trying to find the answer (18:01):
 
